@@ -31,6 +31,7 @@
     justify-content: center;
     transform: translate(-50%, -50%);
     background-image: linear-gradient(to right bottom, rgb(206, 7, 7),rgb(251, 182, 182));
+    border-radius: 20px;
 }
 #out-box h3{
     position: absolute;
@@ -60,6 +61,7 @@
     width: 500px;
     margin-right:30px ;
     background-color: #fae2e2;
+    border-radius: 0 10px 10px 0;
 }
 .email1{
     display: flex;
@@ -80,15 +82,15 @@
 }
 .email1 label{
     color: #606060;
-    margin-top: 7px;
+    font-family: system-ui;
     font-size: 21px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .email1 input{
     background: none;
     border: none;
     outline: none;
-    padding: 10px 30px;
+    padding: 8px 30px;
     font-size: 15px;
 }
 .password{
@@ -110,16 +112,16 @@
     /* background-color: green; */
 }
 .password label{
+    font-family: system-ui;
     color: #606060;
-    margin-top: 7px;
     font-size: 21px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .password input{
     background: none;
     border: none;
     outline: none;
-    padding: 10px 30px;
+    padding: 8px 30px;
     font-size: 15px;
 }
 .in-box-right p{
@@ -132,7 +134,14 @@
     margin: 3% 0 0 40%;
     border:2px solid #ffaeae ;
     border-radius: 10px;
-    background-color:rgb(213, 0, 0);
+    background-color:#d50000;
+    transition: 0.2s ease-in;
+}
+.loginbutton:hover{
+    border:2px solid #fccbcb ;
+    color: #d50000;
+    background-color:white;
+    transform: scale(1.02);
 }
 .loginbutton button{
     background: none;
@@ -141,6 +150,9 @@
     padding: 4px 11px;
     font-size: 15px;
     font-weight: 700;
+}
+.loginbutton button:hover{
+    color: #fc1a1a;
 }
 .signup{
     height: 30px;

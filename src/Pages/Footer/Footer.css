@@ -8,7 +8,9 @@ p{
     font-weight: 200;
 }
 #outerbox{
+    width: 250px;
     display: flex;
+    justify-content: space-between;
 }
 .country{
     height: 40px;

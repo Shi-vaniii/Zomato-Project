@@ -1,22 +1,32 @@
 import React, { useState } from 'react'
 import signup from '../../Images/Zomato-logimg.jpg'
 import './/ZomatoSignUp.css'
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const ZomatoSignUp = () => {
-const [data,SetData]=useState(
-  {
-    name:'',
-    email:'',
-    password:''
-  }
+  const navigate = useNavigate()
+  const [formData,SetformData]=useState(
+    {
+      name:'',
+      email:'',
+      password:''
+    }
 )
 
-const fun1=(e)=>{
+const inpfield=(e)=>{
   let {name,value}=e.target;
-  SetData({...data,[name]:value});
-  console.log(data,'kkk')
+  SetformData({...formData,[name]:value});
+  console.log(formData,'kkk')
 }
 
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  let res = await axios.post('http://localhost:4000/api/users',formData)
+  navigate('/login')
+  console.log(res.data);
+}
   return (
     <div>
     <div id='main'>
@@ -29,19 +39,19 @@ const fun1=(e)=>{
         </div>
         <div id='in-box-right'>
           <div className='name'>
-            <label>Name -</label>
-            <div className='namebox'><input type='text' placeholder='enter your name' name='name' value={data.name} onChange={fun1}></input></div>
+            <label>name :</label>
+            <div className='namebox'><input type='text' placeholder='enter your name' name='name' value={formData.name} onChange={inpfield}></input></div>
           </div>
           <div className='email'>
-            <label>Email -</label>
-            <div className='emailbox'><input type='text' placeholder='enter your email id' name='email' value={data.email} onChange={fun1}></input><br/></div>
+            <label>email :</label>
+            <div className='emailbox'><input type='text' placeholder='enter your email id' name='email' value={formData.email} onChange={inpfield}></input><br/></div>
           </div>
           <div className='password'>
-            <label>Password -</label>
-            <div className='passwordbox'><input type='password' placeholder='enter password' name='password' value={data.password} onChange={fun1}></input></div>
+            <label>password :</label>
+            <div className='passwordbox'><input type='password' placeholder='enter your password' name='password' value={formData.password} onChange={inpfield}></input></div>
           </div>
           <div  className='signupbutton'> 
-            <button onClick={fun1}>SignUp</button>
+            <button onClick={handleSubmit}>SignUp</button>
           </div>
       
         </div>

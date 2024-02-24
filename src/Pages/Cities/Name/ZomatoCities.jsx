@@ -8,8 +8,9 @@ const ZomatoCities = () => {
   return (
     <div>
         <div className='container w-75 mt-5 d-flex justify-content-center align-items-center flex-column'>
-            <h2>Popular locations in India</h2>
-            <p >From swanky upscale restaurants to the cosiest hidden gems serving the most incredible food, Zomato covers it all. Explore menus, and millions of restaurant photos and reviews from users just like you, to find your next great meal.</p>
+            <h2 className='fs-1'>Popular locations in India</h2>
+            <p className='mt-2 fs-5'>From swanky upscale restaurants to the cosiest hidden gems serving the most incredible food, Zomato covers it all. Explore</p>
+            <p className=' mt-0 fs-5'> menus, and millions of restaurant photos and reviews from users just like you, to find your next great meal.</p>
         </div>
       
        <section>

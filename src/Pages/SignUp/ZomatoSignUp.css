@@ -17,15 +17,15 @@
 }
 .name label{
     color: #606060;
-    margin-top: 7px;
+    font-family: system-ui;
     font-size: 21px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .name input{
     background: none;
     border: none;
     outline: none;
-    padding: 10px 30px;
+    padding: 8px 30px;
     font-size: 15px;
 }
 .email{
@@ -48,14 +48,15 @@
 .email label{
     color: #606060;
     margin-top: 7px;
+    font-family: system-ui;
     font-size: 21px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .email input{
     background: none;
     border: none;
     outline: none;
-    padding: 10px 30px;
+    padding: 8px 30px;
     font-size: 15px;
 }
 .signupbutton{
@@ -65,12 +66,22 @@
     border:2px solid #ffaeae ;
     border-radius: 10px;
     background-color:rgb(213, 0, 0);
+    transition: 0.2s ease-in-out;
+}
+.signupbutton:hover{
+    border:2px solid #fccbcb ;
+    color: #d50000;
+    background-color:white;
+    transform: scale(1.01);
 }
 .signupbutton button{
     background: none;
     border: none;
     color: #e7e4e4;
-    padding: 5px 9px;
+    padding: 4px 9px;
     font-size: 15px;
-    font-weight: 700;
+    font-weight:700;
+}
+.signupbutton button:hover{
+    color: #fc1a1a;
 }
