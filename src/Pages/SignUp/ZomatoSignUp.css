@@ -1,0 +1,76 @@
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap:40px;
+    padding: 5px;
+    /* background-color: aqua; */
+}
+.namebox{
+    height: 43px;
+    width: 70%;
+    border: 2px solid #ebeaea;
+    border-radius:25px;
+    background-color:rgb(247, 247, 245) ;
+
+}
+.name label{
+    color: #606060;
+    margin-top: 7px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.name input{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 15px;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    gap:40px;
+    padding: 5px;
+    /* background-color: aqua; */
+}
+.emailbox{
+    height: 43px;
+    width: 70%;
+    border: 2px solid #ebeaea;
+    border-radius:25px;
+    background-color:rgb(247, 247, 245) ;
+
+}
+.email label{
+    color: #606060;
+    margin-top: 7px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.email input{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 15px;
+}
+.signupbutton{
+    height: 35px;
+    width: 68px;
+    margin: 3% 0 0 40%;
+    border:2px solid #ffaeae ;
+    border-radius: 10px;
+    background-color:rgb(213, 0, 0);
+}
+.signupbutton button{
+    background: none;
+    border: none;
+    color: #e7e4e4;
+    padding: 5px 9px;
+    font-size: 15px;
+    font-weight: 700;
+}
