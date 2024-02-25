@@ -14,7 +14,7 @@
     },
     {
         image :"https://t4.ftcdn.net/jpg/06/68/04/05/360_F_668040516_RU9N0U3DOMsquogpDuHd4nFVxdAgVDIw.jpg",
-        text:"Thali"
+        text:" Indian Thali"
     },
     {
         image :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-5l26RQRKKZ1hJp_l1Saok8GMpMrSKWtLAzTP8kiBOdQARmTiQiyINDFCU4cnbpSASRw&usqp=CAUg",

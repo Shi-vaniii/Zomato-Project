@@ -58,7 +58,7 @@ const CityData = () => {
               return(
                 <>
               <div className='food'>
-                <img src={res.image} alt='Pizza'/>
+                <img src={res.image} alt='img'/>
                 <h4>{res.text}</h4>
               </div>
               </>

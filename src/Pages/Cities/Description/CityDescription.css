@@ -103,7 +103,7 @@
 .food{
     height: 250px;
     width: 200px;
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 15px;
     /* background-color: blueviolet; */
 }
 .food img{
@@ -113,10 +113,21 @@
     margin: 25px 0 0 25px;
     object-fit: cover;
     box-shadow: 0 0 2px 2px hsla(0, 1%, 71%, 0.5);
+    transition: 0.3s ease;
+}
+.food img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 5px hsl(0, 97%, 85%);
+    /* background-color: blueviolet; */
 }
 .food h4{
-    margin: 10px 0 0 75px;
+    position: static;
+    margin: 20px 0 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 22px;
     font-weight: 500;
     color: rgb(71, 71, 71);
+    /* background-color: blue; */
 }
