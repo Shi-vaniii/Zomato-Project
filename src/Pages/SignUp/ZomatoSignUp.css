@@ -59,7 +59,35 @@
     padding: 8px 30px;
     font-size: 15px;
 }
-.signupbutton{
+
+#singbtn{
+    height: 35px;
+    width: 65px;
+    padding: 4px 6px;
+    margin: 13px 0 0 200px;
+    border: none;
+    border-radius: 10px;
+    border:2px solid #ffaeae ;
+    background-color:#d50000;
+    color:#e7e4e4;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+#singbtn:hover{
+    transform: scale(1.02);
+    border:2px solid #fccbcb ;
+    background-color:white;
+    color: red;
+}
+
+
+
+
+
+
+/* .signupbutton{
     height: 35px;
     width: 68px;
     margin: 3% 0 0 40%;
@@ -84,4 +112,4 @@
 }
 .signupbutton button:hover{
     color: #fc1a1a;
-}
+} */

@@ -128,31 +128,26 @@
     margin-top: 10px;
     margin-left: 42%;
 } 
-.loginbutton{
+#logbtn{
     height: 35px;
     width: 65px;
-    margin: 3% 0 0 40%;
-    border:2px solid #ffaeae ;
-    border-radius: 10px;
-    background-color:#d50000;
-    transition: 0.2s ease-in;
-}
-.loginbutton:hover{
-    border:2px solid #fccbcb ;
-    color: #d50000;
-    background-color:white;
-    transform: scale(1.02);
-}
-.loginbutton button{
-    background: none;
+    padding: 4px 6px;
+    margin: 13px 0 0 200px;
     border: none;
-    color: #e7e4e4;
-    padding: 4px 11px;
+    border-radius: 10px;
+    border:2px solid #ffaeae ;
+    background-color:#d50000;
+    color:#e7e4e4;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in;
 }
-.loginbutton button:hover{
-    color: #fc1a1a;
+#logbtn:hover{
+    transform: scale(1.02);
+    border:2px solid #fccbcb ;
+    background-color:white;
+    color: red;
 }
 .signup{
     height: 30px;
@@ -165,4 +160,9 @@
 .signlink{
     text-decoration: none;
     color: #606060;
+    transition: 0.3s ease-in-out;
+}
+.signlink:hover{
+    transform: scale(1.02);
+    color: red;
 }

@@ -47,9 +47,7 @@ const handleSubmit = async (e)=>{
                 <label>password :</label>
                 <div className='passwordbox'><input type='password' placeholder='enter your password' name='password' value={data.password} onChange={inptfield}></input></div>
               </div>
-              <div  className='loginbutton'> 
-                <button onClick={handleSubmit}>Login</button>
-              </div>
+              <button onClick={handleSubmit} id='logbtn'>Login</button>
               <div className='signup' >
                 <Link to='/signup' className='signlink'>SignUp</Link>
               </div>

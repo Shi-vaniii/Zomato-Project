@@ -50,10 +50,7 @@ const handleSubmit = async (e) => {
             <label>password :</label>
             <div className='passwordbox'><input type='password' placeholder='enter your password' name='password' value={formData.password} onChange={inpfield}></input></div>
           </div>
-          <div  className='signupbutton'> 
-            <button onClick={handleSubmit}>SignUp</button>
-          </div>
-      
+          <button onClick={handleSubmit} id ='singbtn'>SignUp</button>
         </div>
         </div>
 </div>
